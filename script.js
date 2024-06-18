@@ -58,3 +58,34 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, options);
 
 observer.observe(cards);
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    centeredSlides: true,
+    spaceBetween: 30,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  function menuAnimation() {
+
+    var menu = document.querySelector(".mt");
+    var full = document.querySelector("#full-scr");
+    var navimg = document.querySelector(".nav h3");
+    var flag = 0;
+    menu.addEventListener("click", function () {
+        if (flag == 0) {
+            full.style.top = 0;
+            navimg.style.opacity = 0;
+            flag = 1
+        } else {
+            full.style.top = "-100%";
+            navimg.style.opacity = 1;
+            flag = 0;
+        };
+    });
+}
+menuAnimation()
+
