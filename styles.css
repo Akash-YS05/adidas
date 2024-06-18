@@ -95,7 +95,27 @@ body {
 .profile a{
     color: #212121
 }
+.mt{
+    display: none;
+}
+#full-scr {
+    height: 90vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.5s;
+}
 
+#full-div1 {
+    height: 50%;
+    width: 100%;
+    /* display: none; */
+    background-image: url("/images/body.jpg");
+    border-bottom:  solid #ef350600;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 .main {
     width: 100%;
     display: flex;
@@ -197,15 +217,17 @@ body {
     animation: reveal 1s ease-out forwards;
     animation-delay: 1.4s;
 }
-.introcard {
+/* div */
+.introcard {    
     display: flex;
     align-items: center;
     justify-self: center;
     background-color: #fffbe9;
+    
 }
 .e{
-    font-weight: 600;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;       
     margin-left: 30px;
 }
 
@@ -241,9 +263,10 @@ body {
 }
 .Ecos{
     color: #000;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
     padding: 10px 10px 10px;
-}
+}               
 
 .cards {
     display: flex;
@@ -288,7 +311,7 @@ body {
 .card:hover img {
     transform: scale(1.1);
 }
-
+/* div */
 .nor {
     width: 100%;
     height: 640px;
@@ -356,7 +379,205 @@ body {
     object-fit: contain;
     position: absolute;
 } */
+/* div */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #d4d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.swiper-wrapper{
+    background-color: #ffffff;
+    margin-left: -200px;
+    margin-top: 20px;
+    /* padding: 50px 50px; */
+}
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .r{
+    margin-left: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+  }
+
+  .swiper {
+    
+    width: 100%;
+    height: 300px;
+    margin: 20px ;
+  }
+/* div */
+  .mid {
+    width: 100%;
+    height: 500px;
+    padding: 20px 20px ;
+    display: block;
+    background-image: url(/public/fw24_ec_clot_gazelle_launch_row_hp_mh_d_3dcd11c9de.avif);
+    background-repeat: no-repeat;
+    background-position: center; /* Centers the image */
+    background-size: cover;
+  }
+  .bu{
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+  .bu h1{
+    color: #ffffffa1;
+  }
+  .bu h3{
+    color: #ffffffa5;
+  }
+  .button1{
+    padding: 5px 30px 5px;
+    border: 2px solid rgb(0, 0, 0);
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2rem;
+    
+    /* margin-left: 100px; */
+    transition: 0.3s;
+  }
+  .button1:hover{
+    padding: 5px 40px 5px;
+    transition: 0.3s;
+    border: 1px solid white;
+    background-color: #000;
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2rem;
+  }
+  .re{
+    /* margin-top: 200px; */
+    color: #ffffffb4;
+    font-weight: 100;
+    margin-left: 100px;
+  }
+
+  .select {
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* height: 300px; */
+    margin-top: -40px;
+    background-color: #1b1b1b;
+  }
+  .one {
+    gap: 30px; 
+    margin-top: 50px;
+  }
+  .two{
+    gap: 30px;
+  }
+  .one a {
+    color: #d4d4d4;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    transition: 0.4s;
+    font-size: 4rem;
+    margin-left: 20px;
+    margin-right: 30px; /* Adds gap between each <a> element */
+  }
+  .two a {
+    color: #d6d6d6;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    margin-left: 20px;
+    transition: 0.4s;
+    font-size: 4rem;
+    margin-right: 30px; /* Adds gap between each <a> element */
+  }
+  .one a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 4.3rem;
+    transition: 0.2s;
+    margin-right: 30px; /* Adds gap between each <a> element */
+  }
+  .two a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    transition: 0.2s;
+    font-size: 4.3rem;
+    margin-right: 30px; /* Adds gap between each <a> element */
+  }
+  
+  .h12{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    margin-left: 30px;
+  }
+  .vid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px 20px;
+    max-width: 100%; /* Ensure the container does not exceed the screen width */
+}
+
+.vid1, .vid2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vid1 {
+    flex-direction: row;
+}
+
+.vid2 {
+    flex-direction: row-reverse;
+}
+
+.ww, .ww1 {
+    flex: 1;
+    max-width: 50%; /* Ensure video containers take up half the screen width */
+}
+
+.ww video, .ww1 video {
+    width: 100%;
+    height: auto;
+    max-height: 100vh; /* Ensure videos do not exceed the viewport height */
+    object-fit: cover; /* Ensure videos cover the container while maintaining aspect ratio */
+}
+
+.txt {
+    flex: 1;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.txt h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.txt h3 {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
 
 
 
@@ -367,7 +588,7 @@ body {
     }
 
     .left h1 {
-        font-size: 1.05rem;
+        font-size: 2.05rem;
         font-family: "Bebas Neue", sans-serif;
         font-weight: 600;
     }
@@ -573,6 +794,206 @@ body {
     .card0:hover h1 {
         opacity: 1;
     }
+    #full-scr #full-div1 h4 {
+        font-size: 3rem;
+        text-align: right;
+        padding-top: 1vw;
+        padding-right: 8vw;
+        background-color: #ffffff;
+    }
+    #full-scr #full-div1 h4 a{
+        color: #0c0c0c;
+        text-decoration: none;
+        font-family: "Bebas Neue", sans-serif;
+        background-color: #ffffff;
+
+    }
+    #full-scr #full-div1 {
+        padding-top: 20vw;
+    }
+    .mt{
+        cursor: pointer;
+        display: block;
+        font-family: "Bebas Neue", sans-serif;
+        padding: 10px 10px 10px;
+        border: 1px solid #000000;
+        border-radius: 2px;
+        font-size: 4.75vw;
+        font-weight: 800;
+        padding-left: 5vw;
+        display: flex;
+        align-items:center;
+    }
+    .link{
+        display: none;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+    
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background-color: #d4d4d4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .swiper-wrapper{
+        background-color: #ffffff;
+        margin-left: -100px;
+        margin-top: 20px;
+        /* padding: 50px 50px; */
+    }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .r{
+        margin-left: 30px;
+        font-family: "Bebas Neue", sans-serif;
+      }
+      
+  .mid {
+    width: 100%;
+    height: 500px;
+    padding: 20px 20px ;
+    display: block;
+    background-image: url(/public/fw24_ec_clot_gazelle_launch_row_hp_mh_d_3dcd11c9de.avif);
+    background-repeat: no-repeat;
+    background-position: center; /* Centers the image */
+    background-size: cover;
+  }
+  .bu{
+    margin-top: 200px;
+    margin-left: 0px;
+  }
+  .bu h1{
+    color: #ffffffa1;
+  }
+  .bu h3{
+    color: #ffffffa5;
+  }
+  .button1{
+    padding: 5px 30px 5px;
+    border: 2px solid rgb(0, 0, 0);
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2rem;
+    
+    /* margin-left: 100px; */
+    transition: 0.3s;
+  }
+  .button1:hover{
+    padding: 5px 40px 5px;
+    transition: 0.3s;
+    border: 1px solid white;
+    background-color: #000;
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2rem;
+  }
+  .re{
+    /* margin-top: 200px; */
+    color: #ffffffb4;
+    font-weight: 100;
+    margin-left: 0px;
+  }
+  .one a {
+    color: #d4d4d4;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    transition: 0.4s;
+    font-size: 4rem;
+    margin-right: 30px; /* Adds gap between each <a> element */
+  }
+  .two a {
+    color: #d6d6d6;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    transition: 0.4s;
+    font-size: 4rem;
+    margin-right: 30px; /* Adds gap between each <a> element */
+  }
+  .one a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 4.3rem;
+    transition: 0.2s;
+    margin-right: 30px; /* Adds gap between each <a> element */
+  }
+  .two a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    transition: 0.2s;
+    font-size: 4.3rem;
+    margin-right: 30px; /* Adds gap between each <a> element */
+  }
+  .vid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px 20px;
+    max-width: 100%; /* Ensure the container does not exceed the screen width */
+}
+
+.vid1, .vid2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vid1 {
+    flex-direction: row;
+}
+
+.vid2 {
+    flex-direction: row-reverse;
+}
+
+.ww, .ww1 {
+    flex: 1;
+    max-width: 50%; /* Ensure video containers take up half the screen width */
+}
+
+.ww video, .ww1 video {
+    width: 100%;
+    height: auto;
+    max-height: 100vh; /* Ensure videos do not exceed the viewport height */
+    object-fit: cover; /* Ensure videos cover the container while maintaining aspect ratio */
+}
+
+.txt {
+    flex: 1;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.txt h1 {
+    margin: 0;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.txt h3 {
+    margin: 10px 0 0;
+    font-size: 0.6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+
 }
 
 @keyframes reveal {
