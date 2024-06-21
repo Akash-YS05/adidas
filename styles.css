@@ -89,6 +89,8 @@ body {
 .link a:hover {
     font-weight: 500;
     transition: 0.1s;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
 }
 
 .profile {
