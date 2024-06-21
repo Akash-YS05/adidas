@@ -54,6 +54,64 @@
             </div>
         </div>
         <hr width="45%">
+        <section class="spacer"></section>
+
+        <section class="mar">
+            <div class="mar_in">
+                <div class="mar_pa">
+                    Premium collections
+                    <div class="arrow">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="mar_pa">
+                    Asthetic-look gears
+                    <div class="arrow">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="mar_pa">
+                    Qualitied clothes
+                    <div class="arrow">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="mar_pa">
+                    modern aspect life
+                    <div class="arrow">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="mar_pa">
+                    Premium collections
+                    <div class="arrow">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="mar_pa">
+                    Asthetic-look gears
+                    <div class="arrow">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="mar_pa">
+                    Qualitied clothes
+                    <div class="arrow">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="mar_pa">
+                    modern aspect life
+                    <div class="arrow">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="spacer"></section>
+
         <br>
         <h1 class="e">EXCLUSIVE EOSS DEALS</h1>
         <div class="introcard">
@@ -126,6 +184,7 @@
             <div class="card">
                 <img src="/public/WhatsApp Image 2024-06-14 at 22.29.10_d78d8a11.jpg" alt="">
             </div>
+
             <div class="card">
                 <img src="/public/WhatsApp Image 2024-06-14 at 22.29.10_1a646614.jpg" alt="">
             </div>
@@ -187,31 +246,88 @@
                 <h4><a href="/index.html">History</a></h4>
             </div>
         </div>
+        <div class="parallax"></div>
+
+        <div class="content1">
+            Scroll up and down this page to see the parallax scrolling effect.
+            This div is just here to enable scrolling.
+            Tip: Try to remove the background-attachment property to remove the scrolling effect.
+        </div>
+    
+        <div class="parallax"></div>
 
         <div class="vid">
             <div class="vid1">
                 <div class="ww">
-                    <video muted loop autoplay src="/public/Epic Adidas shoe commercial concept _ product video B-ROLL (1).mp4"></video>
+                    <video muted loop autoplay
+                        src="/public/Epic Adidas shoe commercial concept _ product video B-ROLL (1).mp4"></video>
                 </div>
                 <div class="txt">
                     <h1>Adidas Ultraboost 21</h1>
-                    <h3>Experience unmatched comfort and energy return with the Ultraboost 21, designed for peak performance and style.</h3>
+                    <h3>Experience unmatched comfort and energy return with the Ultraboost 21, designed for peak
+                        performance and style.</h3>
                 </div>
             </div>
             <div class="vid2">
                 <div class="txt">
                     <h1>Adidas NMD_R1</h1>
-                    <h3>Blend of heritage and innovation, the NMD_R1 offers a sleek design with cutting-edge technology for the urban explorer.</h3>
+                    <h3>Blend of heritage and innovation, the NMD_R1 offers a sleek design with cutting-edge technology
+                        for the urban explorer.</h3>
                 </div>
                 <div class="ww1">
-                    <video muted loop autoplay src="/public/Epic Adidas shoe commercial concept _ product video B-ROLL.mp4"></video>
+                    <video muted loop autoplay
+                        src="/public/Epic Adidas shoe commercial concept _ product video B-ROLL.mp4"></video>
                 </div>
             </div>
         </div>
-        
+
+        <div class="down">
+            <div class="card2">
+                <div class="q">
+                    <a href="#"> <img src="/public/669240_v2.jpg" alt="">
+                        <h1>Jerseys</h1>
+                    </a>
+                </div>
+                <div class="q">
+                    <a href="#"> <img src="/public/668864_v2.jpg" alt="">
+                        <h1>Connections</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="card22">
+                <div class="q">
+                    <a href="#"> <img src="/public/669585.jpg" alt="">
+                        <h1>Premium Shoes</h1>
+                    </a>
+                </div>
+                <div class="q">
+                    <a href="#"> <img src="/public/669812_v2.jpg" alt="">
+                        <h1>Best Collection</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
 
     </div>
-
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+    
+            // Adjust the scroll threshold as needed
+            const scrollThreshold = 500;
+    
+            if (scrollPosition > scrollThreshold) {
+                document.body.style.backgroundColor = '#e6f7ff'; // Change background color
+            } else {
+                document.body.style.backgroundColor = 'linear-gradient(141deg, #ffffff 0%, #f8ffd1 51%, #ffed9d 75%)'; // Default background color
+            }
+        });
+        
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
