@@ -1,46 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 @font-face {
     font-family: 'ITC';
-    src: url('/public/adidas/adidas/ITC\ Avant\ Garde\ Gothic\ LT\ Medium.ttf');
+    src: url('public/adidas/adidas/ITC\ Avant\ Garde\ Gothic\ LT\ Medium.ttf');
 }
 html,
 body {
     height: 100%;
     width: 100%;
     font-family: 'ITC';
+    overflow-x: hidden;
 }
 
 body {
     background-color: rgb(255, 255, 255);
-    cursor:none
+    /* cursor:none */
 }
-.cursor {
-    width: 10px;
-    height: 10px;
-    background-color: #0f0f0f7d;
-    z-index: 3;
-}
-.cursor-outline {
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgb(14, 14, 14);
-    background-color: #55555561;
-    z-index: 1;
-}
-.cursor,
-.cursor-outline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 20000000;
-    pointer-events: none;
-}
+
 #loader {
     position: fixed;
     top: 0;
@@ -62,36 +41,137 @@ body {
     font-size: 13rem;
     font-family: "Bebas Neue", sans-serif;
 }
-
 .nav {
+    position: fixed;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    transition: 0.3s;
-    opacity: 0;
-    animation: reveal 1s ease-out forwards;
-    animation-delay: 0.2s;
+    /* padding: 4px; */
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* opacity: 0.2; */
+    
 }
 
-.nav:hover {
-    background-color: aliceblue;
-    transition: 0.3s;
+.nav .logo img {
+    height: 70px;
+    width: 100px;
+    padding: 30px;
+    padding-bottom: 0;
+    padding-top: 10px;
 }
 
+.link {
+    color: white;
+}
 .link a {
     font-weight: 200;
+    font-size: 20px;
     text-decoration: none;
-    color: rgb(24, 24, 24);
-    padding: 10px;
+    color: white;
     transition: 0.3s;
 }
+.link a:nth-child(2) {
+    padding-left: 40px;
+}
+.link a:nth-child(3) {
+    padding-left: 40px;
 
+}
+.link a:nth-child(4) {
+    padding-left: 40px;
+
+}
 .link a:hover {
     font-weight: 500;
     transition: 0.1s;
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
+.nav.scroll {
+    background: rgb(222, 192, 222);
+    transition: background 500ms;
+}
+#main {
+    height: 100vh;
+    width: 100vw;
+    /* padding-bottom: 350px; */
+    background-image: url('public/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .title {
+    padding-top: 170px;
+    margin-bottom: 30px;
+
+}
+#main .title h1 {
+    /* text-align: center; */
+    color: white;
+    font-size: 95px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    /* background: -webkit-linear-gradient( rgb(55, 54, 54), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black; */
+}
+
+#main .title span {
+    background: -webkit-linear-gradient(  grey, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#main .intro {
+    color: white;
+    width: 470px;
+    padding-left: 50px;
+    padding-top: 10px;
+    margin-top: 30px;
+    /* padding-bottom: 100px; */
+    align-self: flex-start;
+    font-size: 23px;
+}
+
+#main .btn {
+    align-self: flex-start;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+#main .btn button {
+    width: 10em;
+    height: 2.3em;
+    margin: 0.5em;
+    /* background-color: white; */
+    background: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+#main .btn button:hover {
+    border: none;
+    background-color: white;
+    color: black;
+    transition: 0.2s ease-in;
+}
+
 
 .profile {
     background-color: rgb(240, 240, 240);
@@ -122,44 +202,8 @@ body {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.main {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    opacity: 0;
-    animation: reveal 1s ease-out forwards;
-    animation-delay: 0.4s;
-}
 
-.left {
-    width: 45%;
-    padding: 124px;
-}
 
-.left h1 {
-    font-size: 4rem;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 600;
-    margin-left: 30px;
-}
-
-.left p {
-    font-size: 2rem;
-    font-weight: 200;
-    margin-left: 30px;
-}
-
-.right {
-    width: 55%;
-    background-size: auto auto;
-    background-color: rgba(255, 255, 255, 1);
-    background-image: repeating-linear-gradient(140deg, transparent, transparent 10px, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 1) 11px );
-    padding: 50px;
-    opacity: 0;
-    animation: reveal 1s ease-out forwards;
-    animation-delay: 0.8s;
-}
 ::selection {
     background-color: #fff70080; /* Background color for selected text */
     color: #000; /* Text color for selected text */
@@ -183,47 +227,7 @@ body {
 }
 
 
-.right img {
-    width: 720px;
-    transform: rotate(-25deg);
-    height: 330px;
-    padding: 20px;
-    transition: 0.2s;
-    margin-top: 10px;
-    margin-left: -150px;
-}
-.right img:hover {
-    width: 720px;
-    transition: 0.2s;
-    transform: rotate(-15deg);
-    height: 330px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: -150px;
-}
 
-.word h1 {
-    color: rgb(203, 203, 203);
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 4rem;
-    margin-left: 300px;
-    margin-top: -40px;
-    opacity: 0;
-    animation: reveal 1s ease-out forwards;
-    animation-delay: 1.2s;
-}
-
-.word h2 {
-    color: rgb(141, 141, 141);
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 4rem;
-    margin-left: 350px;
-    margin-top: -40px;
-    opacity: 0;
-    animation: reveal 1s ease-out forwards;
-    animation-delay: 1.4s;
-}
-/* div */
 .introcard {    
     display: flex;
     align-items: center;
@@ -269,7 +273,7 @@ body {
 }
 .Ecos{
     color: #000;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 200;
     padding: 10px 10px 10px;
 }               
@@ -345,7 +349,7 @@ body {
     transition: 0.4s;
     font-size: 1.2rem;
     border: 2px solid black;
-    font-family: "Bebas Neue", sans-serif;
+    /* font-family: "Bebas Neue", sans-serif; */
 }
 .button:hover{
     padding: 5px 20px 5px;
@@ -354,13 +358,13 @@ body {
     color: #dfdfdf;
     font-size: 1.2rem;
     border: 2px solid rgb(255, 255, 255);
-    font-family: "Bebas Neue", sans-serif;
+    /* font-family: "Bebas Neue", sans-serif; */
 }
 .nor h1{
     margin-left: -70px;
     margin-top: -70px;
     color: #ffffff;
-    font-family: "Bebas Neue", sans-serif;
+    /* font-family: "Bebas Neue", sans-serif; */
     font-weight: 100;
 }
 .nor hr{
@@ -413,7 +417,7 @@ body {
   }
   .r{
     margin-left: 30px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 200;
   }
 
@@ -489,7 +493,7 @@ body {
   .one a {
     color: #d4d4d4;
     text-decoration: underline;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 200;
     transition: 0.4s;
     font-size: 4rem;
