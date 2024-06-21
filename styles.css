@@ -3,15 +3,16 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
-
+@font-face {
+    font-family: 'ITC';
+    src: url('public/adidas/adidas/ITC\ Avant\ Garde\ Gothic\ LT\ Medium.ttf');
+}
 html,
 body {
     height: 100%;
     width: 100%;
-
     font-family: 'ITC';
     overflow-x: hidden;
-
 }
 
 body {
