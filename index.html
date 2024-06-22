@@ -71,13 +71,13 @@
                     </div>
                 </div>
                 <div class="mar_pa">
-                    Qualitied clothes
+                    Quality clothes
                     <div class="arrow">
                         <i class="fa-solid fa-circle-chevron-right"></i>
                     </div>
                 </div>
                 <div class="mar_pa">
-                    modern aspect life
+                    Modern aspect life
                     <div class="arrow">
                         <i class="fa-solid fa-circle-chevron-right"></i>
                     </div>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="mar_pa">
-                    modern aspect life
+                    Modern aspect life
                     <div class="arrow">
                         <i class="fa-solid fa-circle-chevron-right"></i>
                     </div>
@@ -113,40 +113,40 @@
         <section class="spacer"></section>
 
         <br>
-        <h1 class="e">EXCLUSIVE EOSS DEALS</h1>
-        <div class="introcard">
-            <div class="card0">
-                <img src="/public/em_in_eoss_tshirts_deal_hp_crd_d_6a02272987.avif" alt="">
-                <a href="#">
-                    <h1>Shirts</h1>
-                </a>
+        
+        <section class="banner">
+            <div class="imgbx">
+                <img src="/public/daniel-storek-JM-qKEd1GMI-unsplash.jpg" alt="first pic" class="active">
+                <img src="/public/april-c-5RATwbCzYK4-unsplash.jpg" alt="second pic">
+                <img src="/public/damian-barczak-c5hhud9vfOU-unsplash.jpg" alt="third pic">
             </div>
-            <div class="card0">
-                <img src="/public/em_in_eoss_pants_deal_hp_crd_d_e0edcc0c3f.avif" alt="">
-                <a href="#">
-                    <h1>Pants</h1>
-                </a>
-            </div>
-            <div class="card0">
-                <img src="/public/em_in_eoss_shoes_deal_hp_crd_d_50f7fd1521.avif" alt="">
-                <a href="#">
-                    <h1>Shoes</h1>
-                </a>
-            </div>
-            <div class="card0">
-                <img src="/public/em_in_eoss_slides_deal_hp_crd_d_16952325ab.avif" alt="">
-                <a href="#">
-                    <h1>Slides</h1>
-                </a>
-            </div>
-            <div class="card0">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
-            <div class="card1">
-                <h2>Get the exclusive <br> products here</h2>
-            </div>
-        </div>
+    
+            <div class="contentbx">
+                <div class="active">
+                    <h2>Shoe Collection</h2>
+                    <p>From the track to the street. <br>Adidas has you covered.</p>
+                    <a href="#">See More</a>
+                </div>
+                <div>
+                    <h2>Apparel Collection</h2>
+                    <p>Unmatched comfort and style <br> on and off the field. </p>
+                    <a class="a2" href="#">See More</a>
 
+                </div>
+                <div>
+                    <h2>Sliders Collection</h2>
+                    <p>Comfort that moves with you <br> wherever you go.</p>
+                    <a href="#">See More</a>
+
+                </div>
+                
+            </div>
+    
+            <ul class="controls">
+                <li onclick="nextslide();nextslidetext()"></li>
+                <li onclick="prevslide();prevslidetext();"></li>
+            </ul>
+        </section>
 
         <br>
         <div class="nor">
@@ -200,7 +200,7 @@
         <br>
         <br>
         <H1 class="h12">Popular Right Now</H1>
-        <div class="select">
+        <!-- <div class="select">
             <div class="one">
                 <a href="#">samba</a>
                 <a href="#">running shoes</a>
@@ -210,6 +210,52 @@
                 <a href="#">gazelle</a>
                 <a href="#">men sandals</a>
                 <a href="#">track pants</a>
+            </div>
+        </div> -->
+        <div id="page2">
+            <div id="moving-text">
+                <div class="con">
+                    <h1>samba</h1>
+                    <div id="Round"></div>
+                    <h1>running Shoes</h1>
+                    <div id="Round"></div>
+                    <h1>special</h1>
+                    <div id="Round"></div>
+                    <h1>gazelle</h1>
+                    <div id="Round"></div>
+                    <h1>men sandals</h1>
+                    <div id="Round"></div>
+                    <h1>trackpants</h1>
+                    <div id="Round"></div>
+                </div>
+                <div class="con">
+                    <h1>samba</h1>
+                    <div id="Round"></div>
+                    <h1>running Shoes</h1>
+                    <div id="Round"></div>
+                    <h1>special</h1>
+                    <div id="Round"></div>
+                    <h1>gazelle</h1>
+                    <div id="Round"></div>
+                    <h1>men sandals</h1>
+                    <div id="Round"></div>
+                    <h1>trackpants</h1>
+                    <div id="Round"></div>
+                </div>
+                <div class="con">
+                    <h1>samba</h1>
+                    <div id="Round"></div>
+                    <h1>running Shoes</h1>
+                    <div id="Round"></div>
+                    <h1>special</h1>
+                    <div id="Round"></div>
+                    <h1>gazelle</h1>
+                    <div id="Round"></div>
+                    <h1>men sandals</h1>
+                    <div id="Round"></div>
+                    <h1>trackpants</h1>
+                    <div id="Round"></div>
+                </div>
             </div>
         </div>
 
@@ -312,6 +358,39 @@
 
 
     </div>
+    <script>
+        const imgbx = document.querySelector('.imgbx')
+        const slides = imgbx.getElementsByTagName('img')
+        var i=0
+
+        function nextslide() {
+            slides[i].classList.remove('active')
+            i=(i+1) % slides.length
+            slides[i].classList.add('active')
+        }
+        function prevslide() {
+            slides[i].classList.remove('active')
+            i=(i-1 + slides.length) % slides.length
+            slides[i].classList.add('active')
+        }
+
+
+
+        const contentbx = document.querySelector('.contentbx')
+        const slidestext = contentbx.getElementsByTagName('div')
+        var j=0
+
+        function nextslidetext() {
+            slidestext[j].classList.remove('active')
+            j=(j+1) % slidestext.length
+            slidestext[j].classList.add('active')
+        }
+        function prevslidetext() {
+            slidestext[j].classList.remove('active')
+            j=(j-1 + slidestext.length) % slidestext.length
+            slidestext[j].classList.add('active')
+        }
+    </script>
     <script>
         window.addEventListener('scroll', function() {
             const scrollPosition = window.scrollY;
