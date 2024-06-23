@@ -69,19 +69,18 @@ observer.observe(vid);
 observer.observe(select);
 observer.observe(introcard);
 observer.observe(down);
-
-
 observer.observe(cards);
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2,
-    centeredSlides: true,
-    spaceBetween: 30,
 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-  });
+});
+
+
 
   function menuAnimation() {
 
