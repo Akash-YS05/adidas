@@ -65,6 +65,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, options);
 observer.observe(nor);
 observer.observe(mid);
+observer.observe(cards);
 observer.observe(vid);
 observer.observe(select);
 observer.observe(introcard);
