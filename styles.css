@@ -3,10 +3,12 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
+
 @font-face {
     font-family: 'ITC';
-    src: url('public/adidas/adidas/ITC\ Avant\ Garde\ Gothic\ LT\ Medium.ttf'); 
+    src: url('public/adidas/adidas/ITC\ Avant\ Garde\ Gothic\ LT\ Medium.ttf');
 }
+
 html,
 body {
     height: 100%;
@@ -45,60 +47,55 @@ body {
 }
 
 .nav {
-    position: fixed;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    /* padding: 4px; */
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.2);
-    /* opacity: 0.2; */
-    
+    transition: 0.3s;
+    opacity: 0;
+    animation: reveal 1s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
-.nav .logo img {
-    height: 70px;
-    width: 100px;
-    padding: 30px;
-    padding-bottom: 0;
-    padding-top: 10px;
-}
-
-.link {
-    color: white;
-}
-.link a {
-    font-weight: 200;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
+.nav:hover {
+    background-color: aliceblue;
     transition: 0.3s;
 }
-.link a:nth-child(2) {
-    padding-left: 40px;
+.link{
+    /* background-color: #00000065; */
+    padding: 10px 10px;
+    border-radius: 5px;
 }
-.link a:nth-child(3) {
-    padding-left: 40px;
 
+.link a {
+    font-weight: 100;
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    padding: 10px;
+    transition: 0.3s;
 }
-.link a:nth-child(4) {
-    padding-left: 40px;
 
-}
 .link a:hover {
+    font-size: 1.03rem;
     font-weight: 500;
+    color: rgb(0, 0, 0);
     transition: 0.1s;
 }
-.nav.scroll {
-    background: rgb(222, 192, 222);
-    transition: background 500ms;
+
+.profile {
+    background-color: rgb(240, 240, 240);
+    border-radius: 20%;
+    padding: 10px;
 }
+
+.profile a {
+    color: #212121
+}
+
 #main {
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     /* padding-bottom: 350px; */
-    background-image: url('public/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg');
+    background-image: url(/public/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center; */
@@ -114,6 +111,7 @@ body {
     margin-bottom: 30px;
 
 }
+
 #main .title h1 {
     /* text-align: center; */
     color: white;
@@ -128,10 +126,11 @@ body {
 }
 
 #main .title span {
-    background: -webkit-linear-gradient(  grey, black);
+    background: -webkit-linear-gradient(grey, black);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 #main .intro {
     color: white;
     width: 470px;
@@ -166,6 +165,7 @@ body {
     display: block;
     margin: auto;
 }
+
 #main .btn button:hover {
     border: none;
     background-color: white;
@@ -240,8 +240,10 @@ body {
 
 .banner {
     position: relative;
+    /* margin-left: 65px; */
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
+    border-radius: 5px;
 }
 
 .banner .imgbx {
@@ -250,7 +252,7 @@ body {
     left: 0; */
     width: 100%;
     height: 100%;
-   
+
 }
 
 .banner .imgbx img {
@@ -263,12 +265,14 @@ body {
     opacity: 0;
     transition: 0.5s;
     background-position: center;
-    outline: 15px solid white;
-    outline-offset: -27px;
+    outline: 3px solid rgb(255, 255, 255);
+    outline-offset: -17px;
 }
+
 .banner .imgbx img.active {
     opacity: 1;
 }
+
 .controls {
     position: absolute;
     top: 50%;
@@ -280,9 +284,9 @@ body {
 
 .controls li {
     position: relative;
-    width: 80px;
-    height: 80px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.323);
     list-style: none;
     display: flex;
     justify-content: center;
@@ -312,7 +316,7 @@ body {
     position: absolute;
     top: 50%;
     max-width: 100%;
-    
+
 }
 
 .contentbx div {
@@ -320,44 +324,60 @@ body {
 }
 
 .contentbx div.active {
+    background: #ffffff3d;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    margin-top: -40px ;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
     display: block;
     padding-left: 10px;
     margin-left: 60px;
 }
+
 .contentbx div h2 {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    font-family: 'ITC';
 }
-.contentbx div:nth-child(1) h2{
+
+.contentbx div:nth-child(1) h2 {
     color: black;
 }
-.contentbx div:nth-child(1) p{
+
+.contentbx div:nth-child(1) p {
     color: black;
 }
-.contentbx div:nth-child(3) h2{
+
+.contentbx div:nth-child(2) h2 {
     color: black;
 }
-.contentbx div:nth-child(3) p{
+
+.contentbx div:nth-child(2) p {
     color: black;
 }
 
 .contentbx div h2 {
     color: #fff;
-    font-size: 4em;
+    font-size: 2em;
     text-decoration: underline;
+    font-family: 'ITC';
     text-underline-offset: 1rem;
 }
+
 .contentbx div p {
     color: #fff;
+    font-family: 'ITC';
     font-size: 2em;
 }
 
 
 .contentbx div a {
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 1.5em;
     padding-left: 8px;
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 10px;
     font-weight: 500;
     text-decoration: underline;
     text-underline-offset: 1rem;
@@ -372,6 +392,7 @@ body {
     font-weight: 200;
     margin-left: 30px;
 }
+
 #page2 {
     min-height: 100vh;
     width: 100%;
@@ -379,13 +400,16 @@ body {
     padding: 7vw 0vw;
     position: relative;
 }
+
 #moving-text {
     overflow-x: auto;
     white-space: nowrap;
 }
+
 #moving-text::-webkit-scrollbar {
     display: none;
 }
+
 .con {
     white-space: nowrap;
     display: inline-block;
@@ -395,6 +419,7 @@ body {
     animation-iteration-count: infinite;
     gap: 100px;
 }
+
 #moving-text h1 {
     font-size: 4vw;
     color: transparent;
@@ -402,6 +427,7 @@ body {
     -webkit-background-clip: text;
     display: inline-block;
 }
+
 #Round {
     height: 40px;
     width: 40px;
@@ -410,6 +436,7 @@ body {
     background-color: #2b2a2a6d;
     margin: .25vw 2vw;
 }
+
 @keyframes move {
     from {
         transform: translatex(0%);
@@ -475,7 +502,7 @@ body {
 /* div */
 .nor {
     width: 100%;
-    height: 640px;
+    height: 370px;
     display: block;
     background-image: url(/public/image.png);
     background-size: cover;
@@ -556,44 +583,83 @@ body {
 /* div */
 .swiper {
     width: 100%;
-    height: 100%;
+    height: 440px;
+    /* margin-left: 20px; */
+    padding: 10px;
+}
+.swiper h3{
+    margin-left: 20px;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background-color: #d4d4d4;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .swiper-wrapper {
+    display: flex;
+}
+
+.card11 {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+}
+
+.card11 img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.card11 img:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 10px;
+    color: #000;
     background-color: #ffffff;
-    margin-left: -200px;
-    margin-top: 20px;
-    /* padding: 50px 50px; */
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.card11 h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000;
+    font-family: 'ITC';
 }
 
-.r {
-    margin-left: 30px;
-    /* font-family: "Poppins", sans-serif; */
-    font-weight: 200;
+.card11 p {
+    font-size: 14px;
+    color: #0f0f0f;
+    font-family: 'ITC';
 }
 
-.swiper {
-
-    width: 100%;
-    height: 300px;
-    margin: 20px;
+.card11 .price {
+    font-size: 16px;
+    color: #e74c3c;
 }
+
+.card11 button {
+    background: #e74c3c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card11 button:hover {
+    background: #c0392b;
+}
+
 
 /* div */
 .mid {
@@ -601,7 +667,7 @@ body {
     height: 250px;
     padding: 20px 20px;
     display: block;
-    background-image: url(/public/fw24_ec_clot_gazelle_launch_row_hp_mh_d_3dcd11c9de.avif);
+    background-image: url(/public/fw24_ec_clot_gazelle_launch_row_hp_mh_d_3dcd11c9de\ \(1\).avif);
     background-repeat: no-repeat;
     background-position: center;
     /* Centers the image */
@@ -615,6 +681,7 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
 .bu {
     margin-top: 50px;
     margin-left: 100px;
@@ -632,7 +699,7 @@ body {
     padding: 5px 30px 5px;
     border: 2px solid rgb(0, 0, 0);
     color: #000;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: 'ITC';
     font-size: 1.2rem;
 
     /* margin-left: 100px; */
@@ -645,7 +712,7 @@ body {
     border: 1px solid white;
     background-color: #000;
     color: #ffffff;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: 'ITC';
     font-size: 1.2rem;
 }
 
@@ -698,7 +765,7 @@ body {
 .two a {
     color: #d6d6d6;
     text-decoration: underline;
-    font-family: "Poppins", sans-serif;
+    font-family: 'ITC';
     font-weight: 200;
     margin-left: 20px;
     transition: 0.4s;
@@ -710,7 +777,7 @@ body {
 .one a:hover {
     color: #ffffff;
     text-decoration: underline;
-    font-family: "Poppins", sans-serif;
+    font-family: 'ITC';
     font-weight: 300;
     font-size: 4.3rem;
     transition: 0.2s;
@@ -721,7 +788,7 @@ body {
 .two a:hover {
     color: #ffffff;
     text-decoration: underline;
-    font-family: "Poppins", sans-serif;
+    font-family: 'ITC';
     font-weight: 300;
     transition: 0.2s;
     font-size: 4.3rem;
@@ -730,7 +797,7 @@ body {
 }
 
 .h12 {
-    font-family: "Poppins", sans-serif;
+    font-family: 'ITC';
     font-weight: 200;
     margin-left: 30px;
 }
@@ -787,21 +854,21 @@ body {
 .txt {
     flex: 1;
     padding: 20px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'ITC';
     font-weight: 300;
 }
 
 .txt h1 {
     margin: 0;
     font-size: 2rem;
-    font-family: "Poppins", sans-serif;
+    font-family: 'ITC';
     font-weight: 300;
 }
 
 .txt h3 {
     margin: 10px 0 0;
     font-size: 1.2rem;
-    font-family: "Poppins", sans-serif;
+    font-family: 'ITC';
     font-weight: 300;
 }
 
@@ -811,7 +878,9 @@ body {
     padding-bottom: 50px;
     background-size: auto auto;
     background-color: rgba(255, 255, 255, 1);
-    background-image: repeating-linear-gradient(125deg, transparent, transparent 10px, rgba(0, 103, 62, 1) 10px, rgba(0, 103, 62, 1) 20px );
+
+    background-image: repeating-linear-gradient(125deg, transparent, transparent 10px, rgba(0, 103, 62, 1) 10px, rgba(0, 103, 62, 1) 20px);
+
     opacity: 1;
     transform: translateY(100px);
     transition: opacity 1s ease-out, transform 1s ease-out;
@@ -821,7 +890,9 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-.card2 {
+
+.card2,
+.card22 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -830,21 +901,17 @@ body {
 }
 
 .card22 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 40px;
     padding-top: 50px;
 }
 
 .q {
-    padding: 20px 20px 20px;
+    padding: 20px;
     padding-bottom: 10px;
     border-bottom-left-radius: 50px;
     background-color: rgb(255, 255, 255);
 }
-.q h1{
+
+.q h1 {
     text-decoration: none;
     color: #0f0f0f;
     font-family: "Poppins", sans-serif;
@@ -1216,15 +1283,16 @@ body {
         font-family: "Poppins", sans-serif;
         font-weight: 300;
     }
+
     .down {
         display: block;
         padding-top: 30px;
         padding-bottom: 30px;
-      background-size: auto auto;
-background-color: rgba(255, 255, 255, 1);
-background-image: repeating-linear-gradient(125deg, transparent, transparent 10px, rgba(0, 103, 62, 1) 10px, rgba(0, 103, 62, 1) 20px );
+        background-size: auto auto;
+        background-color: rgba(255, 255, 255, 1);
+        background-image: repeating-linear-gradient(125deg, transparent, transparent 10px, rgba(0, 103, 62, 1) 10px, rgba(0, 103, 62, 1) 20px);
     }
-    
+
     .card2 {
         display: flex;
         align-items: center;
@@ -1232,7 +1300,7 @@ background-image: repeating-linear-gradient(125deg, transparent, transparent 10p
         text-align: center;
         gap: 40px;
     }
-    
+
     .card22 {
         display: flex;
         align-items: center;
@@ -1241,17 +1309,20 @@ background-image: repeating-linear-gradient(125deg, transparent, transparent 10p
         gap: 40px;
         padding-top: 50px;
     }
-    .q img{
+
+    .q img {
         width: 100px;
         height: auto;
     }
+
     .q {
         padding: 20px 20px 20px;
         padding-bottom: 10px;
         border-bottom-left-radius: 20px;
         background-color: rgb(255, 255, 255);
     }
-    .q h1{
+
+    .q h1 {
         text-decoration: none;
         color: #0f0f0f;
         font-size: smaller;
@@ -1262,7 +1333,7 @@ background-image: repeating-linear-gradient(125deg, transparent, transparent 10p
 }
 
 @media only screen and (min-width: 760px) and (max-width: 1050px) {
-    
+
 
 
     .card {
@@ -1611,15 +1682,16 @@ background-image: repeating-linear-gradient(125deg, transparent, transparent 10p
         font-family: "Poppins", sans-serif;
         font-weight: 300;
     }
+
     .down {
         display: block;
         padding-top: 30px;
         padding-bottom: 30px;
         background-size: auto auto;
         background-color: rgba(255, 255, 255, 1);
-        background-image: repeating-linear-gradient(136deg, transparent, transparent 10px, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 1) 20px );
+        background-image: repeating-linear-gradient(136deg, transparent, transparent 10px, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 1) 20px);
     }
-    
+
     .card2 {
         display: flex;
         align-items: center;
@@ -1627,7 +1699,7 @@ background-image: repeating-linear-gradient(125deg, transparent, transparent 10p
         text-align: center;
         gap: 40px;
     }
-    
+
     .card22 {
         display: flex;
         align-items: center;
@@ -1636,20 +1708,23 @@ background-image: repeating-linear-gradient(125deg, transparent, transparent 10p
         gap: 40px;
         padding-top: 50px;
     }
-    .q img{
+
+    .q img {
         width: 300px;
         height: auto;
     }
+
     .q {
         padding: 20px 20px 20px;
         padding-bottom: 10px;
         border-bottom-left-radius: 20px;
         background-color: rgb(255, 255, 255);
     }
-    .q h1{
+
+    .q h1 {
         text-decoration: none;
         color: #0f0f0f;
-        font-size:1.5rem;
+        font-size: 1.5rem;
         font-family: "Poppins", sans-serif;
         font-weight: 300;
     }
@@ -1701,6 +1776,7 @@ background-image: repeating-linear-gradient(125deg, transparent, transparent 10p
     text-decoration: underline;
     text-underline-offset: 0.3rem;
     cursor: pointer;
+
 }
 
 .arrow {
@@ -1716,6 +1792,7 @@ background-image: repeating-linear-gradient(125deg, transparent, transparent 10p
     /* 0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     } */
@@ -1730,7 +1807,9 @@ background-image: repeating-linear-gradient(125deg, transparent, transparent 10p
 
 .parallax {
     /* The image used */
-    background-image: url(/public/fw24_ec_clot_gazelle_launch_row_hp_mh_d_3dcd11c9de.avif);
+
+    background-image: url(/public/daniel-monteiro-HwNCyLWw7hw-unsplash.jpg);
+
 
     /* Set a specific height */
     height: 300px;
@@ -1744,10 +1823,25 @@ background-image: repeating-linear-gradient(125deg, transparent, transparent 10p
 
 .content1 {
     height: 300px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #e9e9e995;
     font-size: 36px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
+    font-family: 'ITC';
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+.content1:hover{
+    transition: 0.3s;
+    height: 300px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-family: 'ITC';
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
