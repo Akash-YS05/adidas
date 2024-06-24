@@ -63,7 +63,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
     });
 }, options);
-observer.observe(nor);
+// observer.observe(nor);
 observer.observe(mid);
 observer.observe(cards);
 observer.observe(vid);
@@ -74,7 +74,7 @@ observer.observe(cards);
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 20,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
