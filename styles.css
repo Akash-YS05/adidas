@@ -170,12 +170,12 @@ a:hover {
 #main .intro {
     color: white;
     width: 530px;
-    padding-left: 30px;
-    /* padding-top: 10px; */
+    padding-left: 70px;
+    padding-top: 10px;
     margin-top: 10px;
-    /* padding-bottom: 100px; */
+    padding-bottom: 50px;
     align-self: flex-start;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 32px;
 }
 
@@ -381,13 +381,22 @@ a:hover {
     display: block;
     padding-left: 10px;
     margin-left: 17px;
-    height: 85vh;
+    height: 85vh;  /*have to change in media */
     width: 50%;
-    z-index: 1;
+    /* z-index: 1; */
     line-height: 30px;
 }
-
-.contentbx div h2,p,a {
+.contentbx div:nth-child(3) {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8.3px);
+}
+.contentbx div h2 {
+    padding: 40px;
+}
+.contentbx div p{
+    padding: 40px;
+}
+.contentbx div a {
     padding: 40px;
 }
 
@@ -417,6 +426,152 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
+
+
+.ft-title {
+    padding: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.ft-title h1 {
+    font-weight: 600;
+}
+
+.feature {
+    height: 300px;
+    width: 100%;
+    background-color: #e4c18ef9;
+    display: flex;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+
+
+.feature .ft-desc h1 {
+    font-weight: 600;
+    padding-top: 20px;
+}
+.feature .ft-desc h1 span {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.feature .ft-desc p {
+    margin-top: 20px;
+    margin-right: 4em;
+    font-size: 18px;
+}
+
+
+.feature img {
+    object-fit: contain;
+    width: 650px;
+    transform: rotatey(180deg);
+}
+
+.feature .ft-desc a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.feature2 {
+    height: 300px;
+    width: 100%;
+    background-color: #e0f7e0;
+    display: flex;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.feature2 .ft-desc2 {
+    margin-left: 80px;
+}
+
+.feature2 .ft-desc2 h1 {
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.feature2 .ft-desc2 h1 span {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.feature2 .ft-desc2 p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+.feature2 img {
+    object-fit: contain;
+    width: 650px;
+}
+
+.feature2 .ft-desc2 a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.feature3 {
+    height: 300px;
+    width: 100%;
+    background-color: #e4c18ef9;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.feature3 .ft-img3 {
+    padding-right: 100px;
+    margin-left: 20px;
+}
+
+.feature3 .ft-img3 img {
+    margin-top: -150px;
+}
+
+.feature3 .ft-desc3 h1 {
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.feature3 .ft-desc3 h1 span {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.feature3 .ft-desc3 p {
+    margin-top: 20px;
+    margin-right: 4em;
+    font-size: 18px;
+}
+
+
+.feature3 img {
+    /* object-fit: contain; */
+    width: 430px;
+    height: 450px;
+}
+
+.feature3 .ft-desc3 a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+
 
 .e {
     font-weight: 200;
@@ -752,84 +907,6 @@ a:hover {
     margin-left: 100px;
 }
 
-.select {
-    display: block;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    /* height: 300px; */
-    margin-top: -40px;
-    background-color: #1b1b1b;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.select.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.one {
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.two {
-    gap: 30px;
-}
-
-.one a {
-    color: #d4d4d4;
-    text-decoration: underline;
-    /* font-family: "Poppins", sans-serif; */
-    font-weight: 200;
-    transition: 0.4s;
-    font-size: 4rem;
-    margin-left: 20px;
-    margin-right: 30px;
-    /* Adds gap between each <a> element */
-}
-
-.two a {
-    color: #d6d6d6;
-    text-decoration: underline;
-    font-family: 'ITC';
-    font-weight: 200;
-    margin-left: 20px;
-    transition: 0.4s;
-    font-size: 4rem;
-    margin-right: 30px;
-    /* Adds gap between each <a> element */
-}
-
-.one a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-    font-family: 'ITC';
-    font-weight: 300;
-    font-size: 4.3rem;
-    transition: 0.2s;
-    margin-right: 30px;
-    /* Adds gap between each <a> element */
-}
-
-.two a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-    font-family: 'ITC';
-    font-weight: 300;
-    transition: 0.2s;
-    font-size: 4.3rem;
-    margin-right: 30px;
-    /* Adds gap between each <a> element */
-}
-
-.h12 {
-    font-family: 'ITC';
-    font-weight: 200;
-    margin-left: 30px;
-}
 
 .vid {
     display: flex;
@@ -988,6 +1065,10 @@ a:hover {
         margin: 0;
     }
 
+    .banner {
+        padding-bottom: 30px;
+
+    }
     .banner .imgbx {
         height: 450px;
     }
@@ -1025,6 +1106,7 @@ a:hover {
         padding-left: 0;
         margin-left: 0;
         align-items: center;
+        height: 40vh;
     }
     .contentbx div h2 {
         padding: 15px;
@@ -1037,6 +1119,7 @@ a:hover {
         font-family: 'ITC';
         font-size: 1.2em;
         text-align: center;
+        padding-bottom: 0;
     }
     .contentbx div a {
         width: 100%;
@@ -1047,8 +1130,61 @@ a:hover {
         justify-content: center;
     }
 
+    .ft-title {
+        margin-top: 20px;
+    }
+    .feature {
+        flex-direction: column;
+        height: auto;
+    }
 
+    .feature .ft-desc {
+        padding: 30px;
+    }
+    .feature .ft-desc p {
+        margin-right: 0;
+    }
 
+    .feature .ft-img img {
+        width: 400px;
+    }
+    .feature2 {
+        flex-direction: column;
+        height: auto;
+    }
+    .feature2 .ft-img2 img {
+        width: 400px;
+    }
+    .feature2 .ft-desc2 {
+        padding: 30px;
+        padding-right: 0;
+        order: 1;
+        margin-left: 0;
+    }
+    .feature3 {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .feature3 .ft-desc3 {
+        padding: 30px;
+    }
+    .feature3 .ft-desc3 p {
+        margin-right: 0;
+    }
+
+    .feature3 .ft-img3 img {
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin: auto;
+        margin-top: 0;
+    }
+    .feature3 .ft-img3 {
+        padding-right: 0;
+        margin-left: 0;
+    }
 
 
     .card {
