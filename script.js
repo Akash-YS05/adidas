@@ -63,7 +63,6 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
     });
 }, options);
-<<<<<<< Updated upstream
 // observer.observe(nor);
 observer.observe(mid);
 observer.observe(cards);
@@ -83,27 +82,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-=======
-observer.observe(nor);
-observer.observe(mid);
-observer.observe(vid);
-observer.observe(select);
-observer.observe(introcard);
-observer.observe(down);
-
-
-observer.observe(cards);
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2,
-    centeredSlides: true,
-    spaceBetween: 30,
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
->>>>>>> Stashed changes
 
   function menuAnimation() {
 
@@ -150,7 +128,6 @@ let tween = gsap.to(".mar_in", {
     } else {
         document.body.style.backgroundColor = 'linear-gradient(141deg, #ffffff 0%, #f8ffd1 51%, #ffed9d 75%)'; // Default background color
     }
-<<<<<<< Updated upstream
 });
 
 
@@ -176,6 +153,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     checkVisibility();
 });
-=======
-});
->>>>>>> Stashed changes
