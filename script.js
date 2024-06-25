@@ -129,3 +129,27 @@ let tween = gsap.to(".mar_in", {
         document.body.style.backgroundColor = 'linear-gradient(141deg, #ffffff 0%, #f8ffd1 51%, #ffed9d 75%)'; // Default background color
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".fade-in");
+
+    function checkVisibility() {
+        elements.forEach((element) => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementBottom = element.getBoundingClientRect().bottom;
+
+            const isVisible = elementTop < window.innerHeight && elementBottom >= 0;
+            if (isVisible) {
+                element.classList.add("visible");
+            } else {
+                element.classList.remove("visible");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    window.addEventListener("resize", checkVisibility);
+
+    checkVisibility();
+});
