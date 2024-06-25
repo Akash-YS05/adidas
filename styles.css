@@ -379,7 +379,7 @@ a:hover {
     line-height: 30px;
 }
 
-.contentbx h2,p,a {
+.contentbx div h2,p,a {
     padding: 40px;
 }
 
@@ -604,7 +604,7 @@ a:hover {
 /* div */
 .swiper {
     width: 100%;
-    height: 550px;
+    /* height: 620px; */
     /* margin-left: 20px; */
     /* padding: 10px; */
 
@@ -656,6 +656,7 @@ a:hover {
 
 .card11 p {
     font-size: 14px;
+    padding: 10px 10px;
     color: #0f0f0f;
 }
 
@@ -684,7 +685,7 @@ a:hover {
 /* div */
 .mid {
     width: 100%;
-    height: 250px;
+    height: 350px;
     padding: 20px 20px;
     display: block;
     background-image: url(/public/fw24_ec_clot_gazelle_launch_row_hp_mh_d_3dcd11c9de\ \(1\).avif);
