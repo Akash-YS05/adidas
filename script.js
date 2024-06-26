@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             clearInterval(interval);
             loader.style.transition = "opacity 0.5s ease-out";
             loader.style.opacity = 0;
-            counterElement.innerText = counter +  "welcome";
+            counterElement.innerText = counter ;
             setTimeout(function() {
                 loader.style.display = "none";
                 content.style.display = "block";
