@@ -49,18 +49,15 @@ body {
 .navbar {
     background-color: rgb(255, 255, 255);
     justify-content: space-evenly;
-    height: 50px;
+    height: 70px;
 
 }
-.small-img {
-    width: 30px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-}
+
 
 
 #navbarNav {
     justify-content: space-around;
-    margin-left: 220px;
+    /* margin-left: 120px; */
 }
 
 .nav-link {
@@ -89,9 +86,9 @@ a:hover {
 }
 
 .logo img {
-    height: 50px;
-    width: 80px;
-    padding: 10px;
+    height: auto;
+    width: 120px;
+    padding: 20px;
 }
 
 .link{
@@ -571,7 +568,49 @@ a:hover {
     text-underline-offset: 0.5rem;
 }
 
+.feature4 {
+    height: 300px;
+    width: 100%;
+    background-color: #e0f7e0;
+    display: flex;
+    margin-bottom: 90px;
+    position: relative;
+}
 
+.feature4 .ft-desc4 {
+    margin-left: 80px;
+}
+
+.feature4 .ft-desc4 h1 {
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.feature4 .ft-desc4 h1 span {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.feature4 .ft-desc4 p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+.feature4 img {
+    object-fit: contain;
+    width: 550px;
+    height: auto;
+    margin-top: -120px;
+}
+
+.feature4 .ft-desc4 a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
 
 .e {
     font-weight: 200;
@@ -684,38 +723,6 @@ a:hover {
     transform: scale(1.1);
 }
 
-/* div */
-/* .nor {
-    width: 100%;
-    height: 370px;
-    display: block;
-    background-image: url(/public/image.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    padding: 100px;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-} */
-
-/* .nor.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.but {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-    margin-top: 420px;
-} */
-
 .button {
     padding: 10px 30px 10px;
     transition: 0.4s;
@@ -734,37 +741,7 @@ a:hover {
     /* font-family: "Bebas Neue", sans-serif; */
 }
 
-/* .nor h1 {
-    margin-left: -70px;
-    margin-top: -70px;
-    color: #ffffff;
-    font-weight: 100;
-}
 
-.nor hr {
-    color: #ffffff;
-    margin-left: -70px;
-    margin-top: 0px;
-} */
-
-/* .nor img {
-    max-width: 60%;
-    max-height: 60%;
-    border-radius: 10px;
-    object-fit: contain;
-    transition: 0.3s ease-in-out;
-    position: absolute;
-}
-.nor img:hover {
-    max-width: 60%;
-    transition: 0.3s ease-in-out;
-    max-height: 60%;
-    transform: scale(1.02);
-    border-radius: 10px;
-    object-fit: contain;
-    position: absolute;
-} */
-/* div */
 .swiper {
     width: 100%;
     /* height: 620px; */
@@ -1035,12 +1012,13 @@ a:hover {
         background-position: center;
     }
     .logo img {
-        height: 70px;
-        width: 70px;
+        height: auto;
+        width: 100px;
 
     }
     #main .title {
         padding-top:80px;
+        margin-bottom: 100px;
     }
     #main .title h1 {
         font-size: 3rem;
@@ -1051,18 +1029,21 @@ a:hover {
     #main .intro {
         text-align: center;
         width: 100%;
-        padding: 5px;
+        padding: 170px 10px 0 10px;
+        /* padding-top: 170px; */
+        margin-bottom: -40px;
         font-size: 20px;
         overflow: hidden;
         /* margin-top: 50px; */
-        padding-top: 170px;
     }
 
     #main .btn {
         width: 100%;
         align-self: center;
         /* padding: 5px; */
-        margin: 0;
+        margin-top: 50px;
+        padding: 0;
+        padding-top: 50px;
     }
 
     .banner {
@@ -1107,6 +1088,7 @@ a:hover {
         margin-left: 0;
         align-items: center;
         height: 40vh;
+        font-weight: 100;
     }
     .contentbx div h2 {
         padding: 15px;
@@ -1147,13 +1129,18 @@ a:hover {
 
     .feature .ft-img img {
         width: 400px;
+        display: block;
+        margin: auto;
     }
+
     .feature2 {
         flex-direction: column;
         height: auto;
     }
     .feature2 .ft-img2 img {
         width: 400px;
+        display: block;
+        margin: auto;
     }
     .feature2 .ft-desc2 {
         padding: 30px;
@@ -1161,6 +1148,7 @@ a:hover {
         order: 1;
         margin-left: 0;
     }
+
     .feature3 {
         flex-direction: column;
         height: auto;
@@ -1186,6 +1174,25 @@ a:hover {
         margin-left: 0;
     }
 
+    .feature4 {
+        flex-direction: column;
+        height: auto;
+    }
+    .feature4 .ft-img4 {
+        padding-left: 0;
+        margin-right: 0;
+    }
+    .feature4 .ft-img4 img {
+        width: 400px;
+        display: block;
+        margin: auto;
+    }
+    .feature4 .ft-desc4 {
+        padding: 30px;
+        padding-right: 0;
+        order: 1;
+        margin-left: 0;
+    }
 
     .card {
         width: 130px;
@@ -1214,69 +1221,7 @@ a:hover {
         transform: scale(1.1);
     }
 
-    .nor {
-        width: 100%;
-        height: 1000px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-        padding: 20px 20px 20px;
-    }
-
-    .wor {
-        margin-top: -800px;
-        font-size: xx-small;
-        font-family: "PT Sans Narrow", sans-serif;
-    }
-
-    .nor img {
-        margin-top: -500px;
-        max-width: 40%;
-        max-height: 40%;
-        border-radius: 10px;
-        object-fit: contain;
-        transition: 0.3s ease-in-out;
-        position: absolute;
-    }
-
-    .nor img:hover {
-        margin-top: -500px;
-        max-width: 40%;
-        max-height: 40%;
-        transition: 0.3s ease-in-out;
-        transform: scale(1.03);
-        border-radius: 10px;
-        object-fit: contain;
-        position: absolute;
-    }
-
-    .nor {
-        width: 100%;
-        height: 540px;
-        display: block;
-        background-image: url(/public/image.png);
-        background-size: cover;
-        /* Ensures the image covers the entire area */
-        background-position: center;
-        /* Centers the image */
-        background-repeat: no-repeat;
-        /* Prevents the image from repeating */
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-        padding: 100px;
-    }
-
-    .but {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 20px;
-        margin-top: 380px;
-    }
+    
 
     .button {
         padding: 2px 24px 2px;
@@ -1296,18 +1241,6 @@ a:hover {
         font-family: "Bebas Neue", sans-serif;
     }
 
-    .nor h1 {
-        margin-left: -70px;
-        margin-top: -70px;
-        color: #ffffff;
-        font-size: 1.03rem;
-    }
-
-    .nor hr {
-        color: #ffffff;
-        margin-left: -70px;
-        margin-top: -20px;
-    }
 
     .introcard {
         display: flex;
@@ -1597,9 +1530,149 @@ a:hover {
 
 }
 
-@media only screen and (min-width: 760px) and (max-width: 1050px) {
+@media only screen and (min-width: 760px) and (max-width: 1080px) {
+
+    #main {
+        height: 100vh;
+        background-size: contain;
+        background-position: center;
+    }
+    .logo img {
+        height: auto;
+        width: 100px;
+
+    }
+    #main .title {
+        padding-top:80px;
+        margin-bottom: 100px;
+    }
+    #main .title h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #main .intro {
+        text-align: center;
+        width: 100%;
+        padding: 300px 10px 50px 10px;
+        /* padding-top: 170px; */
+        margin-bottom: -160px;
+        font-size: 25px;
+        overflow: hidden;
+        /* margin-top: 50px; */
+    }
+
+    #main .btn {
+        width: 100%;
+        align-self: center;
+        /* padding: 5px; */
+        margin-top: 100px;
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .contentbx div.active {
+        width: 60%;
+        padding-left: 30px;
+        margin-left: 0;
+        align-items: center;
+        height: 87vh;
+        font-weight: 100;
+    }
+
+    .contentbx {
+        padding-left: 10px;
+    }
+
+    .contentbx div h2 {
+        font-size: 1.7em;
+    }
+
+    .contentbx div p {
+        font-weight:lighter;
+        font-size: 1.2em;
+        line-height: 40px;
+    }
 
 
+
+    .ft-title {
+        margin-top: 20px;
+    }
+    .feature {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .feature .ft-desc {
+        padding: 10px;
+        padding-bottom: 25px;
+    }
+    .feature .ft-desc p {
+        margin-right: 0;
+    }
+
+    .feature .ft-img img {
+        width: 400px;
+    }
+    .feature2 {
+        /* flex-direction: row; */
+        height: auto;
+    }
+    .feature2 .ft-img2 img {
+        width: 400px;
+    }
+    .feature2 .ft-desc2 {
+        padding: 10px;
+        padding-right: 10px;
+        padding-bottom: 25px;
+        /* order: 1; */
+        margin-left: 30px;
+    }
+    .feature3 {
+        flex-direction: row;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .feature3 .ft-desc3 {
+        padding: 10px;
+        padding-bottom: 25px;
+        margin-left: 100px;
+    }
+    .feature3 .ft-desc3 p {
+        margin-right: 0;
+    }
+
+    .feature3 .ft-img3 img {
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin: auto;
+        margin-top: 0;
+    }
+    .feature3 .ft-img3 {
+        padding-left: 40px;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .feature4 {
+        /* flex-direction: row; */
+        height: auto;
+    }
+    .feature4 .ft-img4 img {
+        width: 400px;
+        margin-top: -90px;
+    }
+    .feature4 .ft-desc4 {
+        padding: 10px;
+        padding-right: 10px;
+        padding-bottom: 25px;
+        /* order: 1; */
+        margin-left: 30px;
+    }
 
     .card {
         width: 130px;
@@ -1628,16 +1701,6 @@ a:hover {
         transform: scale(1.1);
     }
 
-    .nor {
-        width: 100%;
-        height: 1000px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-        padding: 20px 20px 20px;
-    }
 
     .wor {
         margin-top: -800px;
@@ -1645,52 +1708,6 @@ a:hover {
         font-family: "PT Sans Narrow", sans-serif;
     }
 
-    .nor img {
-        margin-top: -500px;
-        max-width: 40%;
-        max-height: 40%;
-        border-radius: 10px;
-        object-fit: contain;
-        transition: 0.3s ease-in-out;
-        position: absolute;
-    }
-
-    .nor img:hover {
-        margin-top: -500px;
-        max-width: 40%;
-        max-height: 40%;
-        transition: 0.3s ease-in-out;
-        transform: scale(1.03);
-        border-radius: 10px;
-        object-fit: contain;
-        position: absolute;
-    }
-
-    .nor {
-        width: 100%;
-        height: 540px;
-        display: block;
-        background-image: url(/public/image.png);
-        background-size: cover;
-        /* Ensures the image covers the entire area */
-        background-position: center;
-        /* Centers the image */
-        background-repeat: no-repeat;
-        /* Prevents the image from repeating */
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-        padding: 100px;
-    }
-
-    .but {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 20px;
-        margin-top: 380px;
-    }
 
     .button {
         padding: 2px 24px 2px;
@@ -1709,20 +1726,6 @@ a:hover {
         border: 2px solid rgb(255, 255, 255);
         font-family: "Bebas Neue", sans-serif;
     }
-
-    .nor h1 {
-        margin-left: -70px;
-        margin-top: -70px;
-        color: #ffffff;
-        font-size: 1.03rem;
-    }
-
-    .nor hr {
-        color: #ffffff;
-        margin-left: -70px;
-        margin-top: -20px;
-    }
-
 
     #full-scr #full-div1 h4 {
         font-size: 3rem;
@@ -1846,45 +1849,6 @@ a:hover {
         margin-left: 0px;
     }
 
-    .one a {
-        color: #d4d4d4;
-        text-decoration: underline;
-        font-weight: 200;
-        transition: 0.4s;
-        font-size: 4rem;
-        margin-right: 30px;
-        /* Adds gap between each <a> element */
-    }
-
-    .two a {
-        color: #d6d6d6;
-        text-decoration: underline;
-        font-weight: 200;
-        transition: 0.4s;
-        font-size: 4rem;
-        margin-right: 30px;
-        /* Adds gap between each <a> element */
-    }
-
-    .one a:hover {
-        color: #ffffff;
-        text-decoration: underline;
-        font-weight: 300;
-        font-size: 4.3rem;
-        transition: 0.2s;
-        margin-right: 30px;
-        /* Adds gap between each <a> element */
-    }
-
-    .two a:hover {
-        color: #ffffff;
-        text-decoration: underline;
-        font-weight: 300;
-        transition: 0.2s;
-        font-size: 4.3rem;
-        margin-right: 30px;
-        /* Adds gap between each <a> element */
-    }
 
     .vid {
         display: flex;
