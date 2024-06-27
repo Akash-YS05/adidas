@@ -767,14 +767,31 @@ a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
+    height: 450px;
     width: 300px;
     margin: 10px;
 }
 
+.card11 .img-container {
+    height: 200px;
+}
+
 .card11 img {
-    width: 100%;
-    height: auto;
+    position: absolute;
+    width: auto;
+    height: 180px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
     transition: 0.3s;
+    /* transform:  rotate(-45deg); */
+    margin-top: -30px;
+    /* z-index: 100; */
+}
+
+.card11 .chpic {
+    margin-bottom: -60px;
+    height: 140px;
 }
 
 .card11 img:hover {
@@ -782,16 +799,19 @@ a:hover {
     transform: scale(1.05);
 }
 
+
 .card-content {
     padding: 4px;
     color: #000;
+    height: 350px;
     background-color: #ffffff;
 }
 
 .card11 h2 {
     font-size: 18px;
     margin: 10px 0;
-    color: #000;}
+    color: #000;
+}
 
 .card11 p {
     font-size: 14px;
@@ -811,7 +831,7 @@ a:hover {
     padding: 10px 20px;
     margin: 10px;
     font-size: 14px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -820,8 +840,6 @@ a:hover {
     background: #c0392b;
 }
 
-
-/* div */
 .mid {
     width: 100%;
     height: 350px;
