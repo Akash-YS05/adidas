@@ -19,9 +19,6 @@ body {
 
 body {
     background-color: rgb(255, 255, 255);
-
-    /* cursor:none */
-
 }
 
 #loader {
@@ -65,8 +62,7 @@ body {
     /* margin-left:-20px ; */
 }
 a:hover {
-    text-decoration: underline;
-    text-underline-offset: 1rem;
+    font-size: 1.1rem;
 }
 
 .nav {
@@ -103,38 +99,13 @@ a:hover {
     font-size: 17px;
 }
 
-.link a:hover {
-    font-size: 1.1rem;
-    /* font-weight: 500; */
-    transition: 0.1s;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-}
-
-.profile {
-    background-color: rgb(240, 240, 240);
-    /* border-radius: 20%; */
-    border-radius: 20px;
-    border: 1px solid black;
-    /* padding: 10px; */
-}
-
-.profile a {
-    color: #212121
-}
-
-.menu {
-    background-color: white;
-}
-
 #main {
     height: 100vh;
     width: 100vw;
-    /* padding-bottom: 350px; */
     background-image: url(/public/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     background-color: black;
     display: flex;
     flex-direction: column;
