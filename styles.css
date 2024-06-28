@@ -749,6 +749,9 @@ a:hover {
     .link a:hover {
         text-decoration: none;
     }
+    .logo {
+        margin-top: -10px;
+    }
     #main {
         height: 100vh;
         background-size: contain;
@@ -836,13 +839,12 @@ a:hover {
     .contentbx div h2 {
         padding: 15px;
         padding-bottom: 0;
-        
         text-align: center;
     }
     .contentbx div p {
         color: black;
         font-family: 'ITC';
-        font-size: 1.2em;
+        font-size: 1em;
         text-align: center;
         padding-bottom: 0;
     }
@@ -948,6 +950,7 @@ a:hover {
         height: auto;
         width: 330px !important;
         margin-right: 20px !important;
+        margin-left: 20px;
         text-align: center;
         font-size: 18px;
         /* background-color: #d4d4d4; */
@@ -1398,7 +1401,11 @@ footer {
       display: block;
       margin-bottom: 10px;
     }
-    
+    .footer-container .footer-social ul {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+    }
   }
   
 .signup{
@@ -1471,7 +1478,7 @@ footer {
         transition: 0.3s;
     }
     .content1 p {
-        font-size: 20px;
+        font-size: 15px;
     }
     .content1:hover{
         transition: 0.3s;
@@ -1497,7 +1504,7 @@ footer {
         gap: 20px;
     }
     .textx{
-        font-size: large;
+        font-size: 15px;
     }
     .btnsign1{
         padding: 3px 10px 3px;
@@ -1521,6 +1528,7 @@ footer {
     .lastpart{
         top: 20px;
         display: flex;
+        flex-direction: column;
         background-color: #efffd3;
         height: auto;
         padding: 20px 20px 20px;
@@ -1529,15 +1537,15 @@ footer {
         border-top: 2px solid black;
     }
     .lleft{
-        width: 50%;
-        font-size: 0.60rem;
+        width: 100%;
+        font-size: 0.7rem;
     }
     .lleft h1{
         font-size: 1rem;
     }
     .lright{
-        width: 50%;
-        font-size: 0.60rem;
+        width: 100%;
+        font-size: 0.7rem;
     }
     .lright h1{
         font-size: 1rem;
