@@ -72,14 +72,16 @@ observer.observe(introcard);
 observer.observe(down);
 observer.observe(cards);
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+const mediaQuery = window.matchMedia('(max-width: 765px)')
+
+// var swiper = new Swiper(".mySwiper", {
+//     slidesPerView: 3,
+//     spaceBetween: 20,
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// });
 
 
 
